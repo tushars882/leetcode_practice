@@ -8,7 +8,7 @@ public class lc_41_firstMissing {
         Arrays.sort(nums);
         int len = nums.length;
 
-        
+
         if(nums[0] == 0 || nums[0] == 1){
             for(int i = 0 ; i < nums.length-1 ; i++){
                 if( (nums[i+1]-nums[i] == 1) ){
