@@ -28,7 +28,7 @@ public class lc_13_romanToInt {
         }
         sum = map.get(s.charAt(0));
 
-        for(int i = 1 ; i < s.length() ; i++){
+        for(int i = 1 ; i < s.length() ; i++){          //XIX
 
                 if(map.get(s.charAt(i)) > map.get(s.charAt(i-1))){
                     sum = sum+map.get(s.charAt(i)) - 2*map.get(s.charAt(i-1)) ;
@@ -42,6 +42,6 @@ public class lc_13_romanToInt {
         return sum;
     }
     public static void main(String args[]){
-        System.out.print(sum("MCMXCIV"));
+        System.out.print(sum("XIX"));
     }
 }
